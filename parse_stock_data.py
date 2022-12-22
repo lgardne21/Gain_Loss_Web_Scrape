@@ -57,3 +57,4 @@ stock_df.drop(stock_df[stock_df['year'] == 'Year'].index, inplace=True)
 
 print(stock_df)
 
+stock_df.to_csv('/Users/samuelspencer/Gain_Loss_Web_Scrape/all_stocks_and_prices.csv', sep='|')
