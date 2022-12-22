@@ -40,5 +40,7 @@ df_columns = ['company_name', 'company_url', 'year', 'start_price', 'end_price',
 
 stock_df = pd.DataFrame(all_stock_values, columns=df_columns)
 
-stock_df.drop(stock_df[stock_df['year'] == 'Year'].index)
+stock_df.drop(stock_df[stock_df['year'] == 'Year'].index, inplace=True)
+
+print(stock_df)
 
